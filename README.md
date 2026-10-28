@@ -1,6 +1,6 @@
 # WatchMusic
 
-为 Android 手表打造的本地音乐播放器，Material 3 Expressive 风格，界面全部中文，按 408×502（204×251dp @320dpi）竖屏表盘优化。
+为 Android 手表打造的本地音乐播放器，Material 3 Expressive 风格，界面全部中文。
 
 ## 功能
 
@@ -32,10 +32,6 @@
 # 发行版（有签名配置时签名，R8 优化开启）
 .\gradlew.bat :app:assembleRelease
 ```
-
-产物：调试版 `app\build\outputs\apk\debug\app-debug.apk`；发行版 `app\build\outputs\apk\release\app-release.apk`。
-
-发行签名由工程根目录的 `keystore.properties`（`storeFile` / `storePassword` / `keyAlias` / `keyPassword`）指向密钥库。该文件含口令，**已在 `.gitignore` 中排除，不要提交**；文件缺失时 release 构建会自动产出未签名 APK（仍可编译），因此新克隆的仓库无需任何签名配置即可构建。
 
 ## 技术栈
 
